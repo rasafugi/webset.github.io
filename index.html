@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>紅菌含的個人網頁</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">紅菌含</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="切換導覽選單"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">個人簡介</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#career">生涯</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">職能</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#interests">興趣</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#works">作品</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 獨立橫幅 -->
+    <div class="banner-container">
+      <img
+        src="photo/banner-nikke.jpg"
+        alt="勝利女神妮姬橫幅"
+        class="banner-img"
+      />
+    </div>
+
+    <main class="container main-content my-5">
+      <!-- 個人簡介 -->
+      <section id="profile" class="mb-5">
+        <h2 class="mb-3">個人簡介</h2>
+        <div class="profile-image mb-3">
+          <img
+            src="photo/nikke-profile.jpg"
+            alt="勝利女神妮姬個人照"
+            class="img-fluid rounded"
+          />
+        </div>
+        <p>我是紅菌含，一位充滿熱情的資工系學生，喜歡探索科技與藝術的結合。</p>
+      </section>
+
+      <!-- 生涯 -->
+      <section id="career" class="mb-5">
+        <h2 class="mb-3">生涯</h2>
+        <p>目前就讀資工系，積極參與各種專案與實習，目標成為全端工程師。</p>
+      </section>
+
+      <!-- 職能 -->
+      <section id="skills" class="mb-5">
+        <h2 class="mb-3">職能</h2>
+        <ul>
+          <li>程式語言：Python、JavaScript、C++</li>
+          <li>前端框架：Bootstrap、React</li>
+          <li>資料庫：MySQL、MongoDB</li>
+          <li>版本控制：Git</li>
+        </ul>
+      </section>
+
+      <!-- 興趣 -->
+      <section id="interests" class="mb-5">
+        <h2 class="mb-3">興趣</h2>
+        <p>喜歡繪畫、遊戲設計與AI技術研究。</p>
+      </section>
+
+      <!-- 作品 -->
+      <section id="works" class="mb-5">
+        <h2 class="mb-3">作品</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="photo/work1.jpg" class="card-img-top" alt="作品1" />
+              <div class="card-body">
+                <h5 class="card-title">專案一</h5>
+                <p class="card-text">一個使用React開發的互動網站。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="photo/work2.jpg" class="card-img-top" alt="作品2" />
+              <div class="card-body">
+                <h5 class="card-title">專案二</h5>
+                <p class="card-text">基於Python的資料分析專案。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="photo/work3.jpg" class="card-img-top" alt="作品3" />
+              <div class="card-body">
+                <h5 class="card-title">專案三</h5>
+                <p class="card-text">機器學習模型訓練與應用。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary text-white py-4">
+      <div class="container text-center">
+        <p>
+          聯絡方式：紅菌含 | Email: hongjunhan@example.com | 電話: 0912-345-678
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
