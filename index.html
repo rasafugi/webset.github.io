@@ -8,124 +8,167 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">紅菌含</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="切換導覽選單"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#profile">個人簡介</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#career">生涯</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">職能</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#interests">興趣</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#works">作品</a>
-              </li>
-            </ul>
-          </div>
+    <!-- Header / 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container">
+        <a class="navbar-brand anime-font" href="#">紅菌含</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="切換導覽"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav anime-font">
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">個人簡介</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#career">生涯</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">職能</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">興趣</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#works">作品</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+
+    <!-- 橫幅 Banner -->
+    <header
+      class="banner d-flex align-items-center justify-content-center text-center text-white"
+    >
+      <div class="container">
+        <h1 class="display-4 anime-font">歡迎來到紅菌含的世界</h1>
+        <p class="lead">資工系學生｜動漫風｜熱愛勝利女神妮姬</p>
+      </div>
     </header>
 
-    <!-- 獨立橫幅 -->
-    <div class="banner-container">
-      <img
-        src="photo/banner-nikke.jpg"
-        alt="勝利女神妮姬橫幅"
-        class="banner-img"
-      />
-    </div>
-
-    <main class="container main-content my-5">
+    <!-- 主要內容 -->
+    <main class="container my-5" style="max-width: 1200px">
       <!-- 個人簡介 -->
-      <section id="profile" class="mb-5">
-        <h2 class="mb-3">個人簡介</h2>
-        <div class="profile-image mb-3">
-          <img
-            src="photo/nikke-profile.jpg"
-            alt="勝利女神妮姬個人照"
-            class="img-fluid rounded"
-          />
+      <section id="intro" class="mb-5">
+        <h2 class="anime-font section-title">個人簡介</h2>
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <img
+              src="photo/nikke-profile.jpg"
+              alt="勝利女神妮姬"
+              class="img-fluid rounded anime-border"
+            />
+          </div>
+          <div class="col-md-8">
+            <p>
+              大家好，我是紅菌含，一名熱愛資工與動漫的學生。喜歡挑戰各種程式設計與創意專案，並且深受勝利女神妮姬的角色啟發。
+            </p>
+          </div>
         </div>
-        <p>我是紅菌含，一位充滿熱情的資工系學生，喜歡探索科技與藝術的結合。</p>
       </section>
 
       <!-- 生涯 -->
       <section id="career" class="mb-5">
-        <h2 class="mb-3">生涯</h2>
-        <p>目前就讀資工系，積極參與各種專案與實習，目標成為全端工程師。</p>
+        <h2 class="anime-font section-title">生涯</h2>
+        <ul>
+          <li>2021 - 現在：國立某大學資工系學生</li>
+          <li>2023：參與校內軟體開發競賽獲獎</li>
+          <li>2024：實習於知名科技公司，負責前端開發</li>
+        </ul>
       </section>
 
       <!-- 職能 -->
       <section id="skills" class="mb-5">
-        <h2 class="mb-3">職能</h2>
-        <ul>
-          <li>程式語言：Python、JavaScript、C++</li>
-          <li>前端框架：Bootstrap、React</li>
-          <li>資料庫：MySQL、MongoDB</li>
-          <li>版本控制：Git</li>
-        </ul>
+        <h2 class="anime-font section-title">職能</h2>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 mb-3">
+            <div class="skill-card p-3 anime-border rounded">
+              <h5>程式語言</h5>
+              <p>JavaScript, Python, C++, Java</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3">
+            <div class="skill-card p-3 anime-border rounded">
+              <h5>前端技術</h5>
+              <p>HTML5, CSS3, Bootstrap, React</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-3">
+            <div class="skill-card p-3 anime-border rounded">
+              <h5>其他技能</h5>
+              <p>Git, Docker, Linux</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- 興趣 -->
-      <section id="interests" class="mb-5">
-        <h2 class="mb-3">興趣</h2>
-        <p>喜歡繪畫、遊戲設計與AI技術研究。</p>
+      <section id="hobbies" class="mb-5">
+        <h2 class="anime-font section-title">興趣</h2>
+        <p>
+          動漫、遊戲設計、繪畫、閱讀科幻小說，並且熱愛收集勝利女神妮姬的周邊商品。
+        </p>
       </section>
 
       <!-- 作品 -->
       <section id="works" class="mb-5">
-        <h2 class="mb-3">作品</h2>
-        <div class="row g-3">
-          <div class="col-md-4">
-            <div class="card h-100">
+        <h2 class="anime-font section-title">作品</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card anime-border">
               <img src="photo/work1.jpg" class="card-img-top" alt="作品1" />
               <div class="card-body">
-                <h5 class="card-title">專案一</h5>
-                <p class="card-text">一個使用React開發的互動網站。</p>
+                <h5 class="card-title">專案名稱1</h5>
+                <p class="card-text">描述專案1的內容與特色。</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100">
+          <div class="col-md-6">
+            <div class="card anime-border">
               <img src="photo/work2.jpg" class="card-img-top" alt="作品2" />
               <div class="card-body">
-                <h5 class="card-title">專案二</h5>
-                <p class="card-text">基於Python的資料分析專案。</p>
+                <h5 class="card-title">專案名稱2</h5>
+                <p class="card-text">描述專案2的內容與特色。</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img src="photo/work3.jpg" class="card-img-top" alt="作品3" />
+          <div class="col-md-6">
+            <div class="card anime-border">
+              <img src="photo/work3.jpg" class="card-img-top" alt="作品2" />
               <div class="card-body">
-                <h5 class="card-title">專案三</h5>
-                <p class="card-text">機器學習模型訓練與應用。</p>
+                <h5 class="card-title">專案名稱3</h5>
+                <p class="card-text">描述專案3的內容與特色。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card anime-border">
+              <img src="photo/work4.jpg" class="card-img-top" alt="作品2" />
+              <div class="card-body">
+                <h5 class="card-title">專案名稱4</h5>
+                <p class="card-text">描述專案4的內容與特色。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card anime-border">
+              <img src="photo/work5.jpg" class="card-img-top" alt="作品2" />
+              <div class="card-body">
+                <h5 class="card-title">專案名稱5</h5>
+                <p class="card-text">描述專案5的內容與特色。</p>
               </div>
             </div>
           </div>
@@ -133,12 +176,15 @@
       </section>
     </main>
 
-    <footer class="bg-primary text-white py-4">
-      <div class="container text-center">
-        <p>
-          聯絡方式：紅菌含 | Email: hongjunhan@example.com | 電話: 0912-345-678
-        </p>
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-4 anime-font">
+      <div>
+        聯絡方式：<a href="mailto:hongjunhan@example.com" class="text-white"
+          >hongjunhan@example.com</a
+        >
+        | 電話：0912-345-678
       </div>
+      <div>© 2025 紅菌含</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
